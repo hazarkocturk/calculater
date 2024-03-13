@@ -9,14 +9,11 @@ body{
   font-weight: weight;
   font-style: normal;
   background-image: linear-gradient(to bottom right, #FF61D2, #FE9090);
-  
-  height: 100vh;
-
 }
 
 main{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     height: 100vh;
 }
@@ -32,21 +29,15 @@ main{
 .screen{
     border: 1px solid #505050;
     border-radius: 10px;
-    margin: 10px 5px;
-    max-width: 270px;
-    height: 75px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 10px;
-    font-size: 2rem;
+    margin: 10px auto;
+    width: 270px;
+    min-height:75px;
+    text-align: justify;
+    padding: 5px 10px;
+    font-size: 1.5rem;
     font-weight: 600;
     background-color: #a2bbcf;
-    white-space:pre-wrap; 
     word-wrap: break-word;
-    overflow-wrap: break-word;
-
 }
 
 .buttonContainer{
@@ -71,4 +62,15 @@ main{
 
 .nn{
     background-color: 	#b86262;
+}
+
+.history{
+
+    font-size: 0.6rem;
+    height:300px;
+    margin: 10px auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    text-align: justify;
+    
 }

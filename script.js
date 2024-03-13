@@ -28,7 +28,9 @@ let btn = document.querySelectorAll(".btn");
           screen.innerText = result;
         } else if (input === "Escape") {
           screen.innerText = "";
-        } else if (!isNaN(input) || input === "." || input === "+" || input === "-" || input === "*" || input === "/") {
+        } else if (input === "Backspace") {
+            screen.innerText = screen.innerText.slice(0, -1);
+        }else if (!isNaN(input) || input === "." || input === "+" || input === "-" || input === "*" || input === "/" || input === "%" || input === "("|| input === ")") {
         screen.innerText += input;
         }
         history.innerHTML = historyArray.join("<br>");
